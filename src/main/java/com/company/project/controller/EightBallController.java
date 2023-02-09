@@ -37,7 +37,7 @@ public class EightBallController {
             question = " ";
         }
         int index = random.nextInt(responses.size());
-        EightBall res = new EightBall(idCounter++, question, responses.get(index));
+        EightBall res = new EightBall(idCounter++,  responses.get(index),question);
         answers.add(res);
         return res.getAnswer();
     }
